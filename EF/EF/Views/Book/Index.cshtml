@@ -1,0 +1,23 @@
+﻿@model List<EF.Models.Database.Book>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var b in Model)
+    { 
+        <tr>
+            <td>@b.Id</td>
+            <td>@b.Name</td>
+            <td>@b.Author</td>
+            <td>@b.Price</td>
+        </tr>
+    }
+</table>
