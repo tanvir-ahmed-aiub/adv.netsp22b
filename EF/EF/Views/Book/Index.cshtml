@@ -10,14 +10,18 @@
         <th>Name</th>
         <th>Author</th>
         <th>Price</th>
+        <th></th>
+        <th></th>
     </tr>
     @foreach (var b in Model)
     { 
-        <tr>
-            <td>@b.Id</td>
-            <td>@b.Name</td>
-            <td>@b.Author</td>
-            <td>@b.Price</td>
-        </tr>
+<tr>
+    <td>@b.Id </td>
+    <td>@b.Name</td>
+    <td>@b.Author</td>
+    <td>@b.Price</td>
+    <td><a class="btn btn-info" href="/Book/Edit/@b.Id">Edit</a></td>
+    <td><a class="btn btn-danger" href="">Delete</a></td>
+</tr>
     }
 </table>

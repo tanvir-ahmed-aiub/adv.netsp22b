@@ -23,6 +23,7 @@ namespace EF.Controllers
             var data = (from b in db.Books
                         where b.Price > 500
                         select b).ToList();
+            return View();
         }
         [HttpGet]
         public ActionResult Create() 
@@ -40,6 +41,30 @@ namespace EF.Controllers
                 return RedirectToAction("Index");
             }
             return View();
+        }
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            sp22BEntities db = new sp22BEntities();
+
+            var book = (from b in db.Books
+                       where b.Id == id
+                       select b).FirstOrDefault();
+            return View(book);
+        }
+        [HttpPost]
+        public ActionResult Edit(Book sub_b)
+        {
+            sp22BEntities db = new sp22BEntities();
+            var book = (from b in db.Books
+                        where b.Id == sub_b.Id
+                        select b).FirstOrDefault();
+            
+            db.Entry(book).CurrentValues.SetValues(sub_b);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+
+
         }
     }
 }
