@@ -160,12 +160,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UMS.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Database\User.cs">
+      <DependentUpon>UMS.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Entity\CourseModel.cs" />
     <Compile Include="Models\Entity\DepartmentCourseModel.cs" />
     <Compile Include="Models\Entity\DepartmentModel.cs" />
     <Compile Include="Models\Entity\DepartmentStudentModel.cs" />
     <Compile Include="Models\Entity\StudentCourseModel.cs" />
     <Compile Include="Models\Entity\StudentModel.cs" />
+    <Compile Include="Models\Entity\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -221,6 +225,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Dashboard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
