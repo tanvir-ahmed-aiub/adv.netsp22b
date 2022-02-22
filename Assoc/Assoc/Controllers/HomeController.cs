@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using AutoMapper;
 using Assoc.Models.Entity;
 using System.Web.Security;
+using Assoc.Auth;
 
 namespace Assoc.Controllers
 {
@@ -39,6 +40,7 @@ namespace Assoc.Controllers
         [HttpPost]
         public ActionResult Index(UserModel user)
         {
+            
             if (ModelState.IsValid)
             {
                 UMS_Sp22_BEntities db = new UMS_Sp22_BEntities();
@@ -48,7 +50,8 @@ namespace Assoc.Controllers
                             select u).FirstOrDefault();
                 if (data != null)
                 {
-                    FormsAuthentication.SetAuthCookie(data.Username, false);
+                    FormsAuthentication.SetAuthCookie(data.Username, false); //for default authorization
+                    //Session["UserType"] = data.Role;
                    // FormsAuthentication.SignOut(); for logout
                     return RedirectToAction("Dashboard");
                 }
@@ -69,6 +72,21 @@ namespace Assoc.Controllers
             var deptDb = db.Departments.ToList();
             Mapper mapper = new Mapper(config);
             var data = mapper.Map<List<DepartmentModel>>(deptDb);
+            return View(data);
+        }
+
+        [AdminAccess]
+        public ActionResult AllUsers() {
+            UMS_Sp22_BEntities db = new UMS_Sp22_BEntities();
+            var config = new MapperConfiguration(
+                cfg => {
+                    cfg.CreateMap<User, UserModel>();
+
+                }
+                );
+            var deptDb = db.Users.ToList();
+            Mapper mapper = new Mapper(config);
+            var data = mapper.Map<List<UserModel>>(deptDb);
             return View(data);
         }
 
