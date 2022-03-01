@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Practice.Models.Entities.OrderModel>
+
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2>Dashboard</h2>
+<h3>Welcome @Session["UserName"]</h3>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer.UserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @if (item.Status.Trim().Equals("Ordered"))
+            {
+                <a href="/admin/process/@item.Id" class="btn btn-success">Accept</a>
+            }
+            @if (item.Status.Trim().Equals("Processing"))
+            {
+                <a href="" class="btn btn-success">Delivered</a>
+            }
+            @if (!item.Status.Trim().Equals("Delivered"))
+            {
+                <a href="/admin/cancel/@item.Id" class="btn btn-danger">Cancel</a>
+            }
+
+        </td>
+    </tr>
+}
+
+</table>
