@@ -1,4 +1,5 @@
 ﻿using BLL.Entities;
+using DAL;
 using DAL.Database;
 using DAL.Repos;
 using System;
@@ -12,7 +13,8 @@ namespace BLL.Services
     public class StudentService
     {
         public static StudentModel Get(int id) {
-            var st = StudentRepo.Get(id);
+            var st = DataAccessFactory.StudentDataAccess().Get(id);
+            var auth = DataAccessFactory.AuthDataAccess().Authenticate("","");
             return new StudentModel() { 
                 Id= st.Id,
                 Name = st.Name,

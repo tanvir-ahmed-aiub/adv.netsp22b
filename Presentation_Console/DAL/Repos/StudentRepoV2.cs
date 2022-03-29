@@ -7,18 +7,17 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    public class StudentRepo : IRepository<Student, int>
+    public class StudentRepoV2 : IRepository<Student, int>,IAuth
     {
-        UMS_Sp22_BEntities db;
-        public StudentRepo(UMS_Sp22_BEntities db)
-        {
-            this.db = db;
-        }
         public bool Add(Student obj)
         {
-            db.Students.Add(obj);
-            if (db.SaveChanges() != 0) return true;
-            return false;
+            throw new NotImplementedException();
+        }
+
+        public bool Authenticate(string username, string password)
+        {
+            //do the authentication
+            return true;
         }
 
         public bool Delete(int id)
@@ -33,12 +32,12 @@ namespace DAL.Repos
 
         public Student Get(int id)
         {
-            return db.Students.FirstOrDefault(x => x.Id == id);
+            return new Student();
         }
 
         public List<Student> Get()
         {
-            return db.Students.ToList();
+            throw new NotImplementedException();
         }
     }
 }
