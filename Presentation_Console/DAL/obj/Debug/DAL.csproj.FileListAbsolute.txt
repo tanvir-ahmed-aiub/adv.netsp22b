@@ -1,0 +1,10 @@
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\DAL\bin\Debug\DAL.dll.config
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\DAL\bin\Debug\DAL.dll
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\DAL\bin\Debug\DAL.pdb
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\DAL\obj\Debug\DAL.dll
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\DAL\obj\Debug\DAL.pdb

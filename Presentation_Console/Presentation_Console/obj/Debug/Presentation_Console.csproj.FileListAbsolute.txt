@@ -1,0 +1,15 @@
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\bin\Debug\Presentation_Console.exe.config
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\bin\Debug\Presentation_Console.exe
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\bin\Debug\Presentation_Console.pdb
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\obj\Debug\Presentation_Console.csproj.AssemblyReference.cache
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\obj\Debug\Presentation_Console.csproj.CoreCompileInputs.cache
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\obj\Debug\Presentation_Console.exe
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\obj\Debug\Presentation_Console.pdb
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\bin\Debug\BLL.dll
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\bin\Debug\DAL.dll
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\bin\Debug\EntityFramework.dll
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\bin\Debug\BLL.pdb
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\bin\Debug\DAL.pdb
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\bin\Debug\DAL.dll.config
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\bin\Debug\EntityFramework.xml
+C:\Users\Teacher\Desktop\.Net B\Presentation_Console\Presentation_Console\obj\Debug\Presentation_Console.csproj.CopyComplete
