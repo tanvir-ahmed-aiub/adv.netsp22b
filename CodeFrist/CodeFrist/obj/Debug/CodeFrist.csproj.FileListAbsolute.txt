@@ -1,0 +1,13 @@
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\bin\Debug\CodeFrist.exe.config
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\bin\Debug\CodeFrist.exe
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\bin\Debug\CodeFrist.pdb
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\bin\Debug\EntityFramework.dll
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\bin\Debug\EntityFramework.xml
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\obj\Debug\CodeFrist.csproj.AssemblyReference.cache
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\obj\Debug\CodeFrist.csproj.CoreCompileInputs.cache
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\obj\Debug\CodeFrist.csproj.CopyComplete
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\obj\Debug\CodeFrist.exe
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\obj\Debug\CodeFrist.pdb
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\obj\Debug\CodeFrist.Migrations.initdbanddeptstudenttbl.resources
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\obj\Debug\CodeFrist.csproj.GenerateResource.cache
+C:\Users\Teacher\Desktop\.Net B\CodeFrist\CodeFrist\obj\Debug\CodeFrist.Migrations.coursestudentrealtionships.resources

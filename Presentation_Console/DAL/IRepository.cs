@@ -15,5 +15,6 @@ namespace DAL
         bool Delete(ID id);
 
 
+
     }
 }

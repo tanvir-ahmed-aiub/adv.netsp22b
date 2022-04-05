@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script>
+			var app = angular.module("myapp",[]);
+			
+			app.controller("bodyCtrl",function($scope){
+				$scope.cities = ["Dhaka","Chittagong","Coxs bazar","Sylhet"];
+			});
+			
+			app.controller("postCtrl",function($scope,$http){
+				$http.get("https://jsonplaceholder.typicode.com/posts").then(function(response){
+					$scope.posts = response.data;
+				},function(err){
+				});
+			});
+			
+		</script>
+	</head>
+	<body ng-app="myapp">
+		<div>
+		
+		</div>
+		
+		<div ng-controller="bodyCtrl">
+			<input type="text" ng-model="uname">
+			<input type="password" ng-model="pass">
+			<select>
+				<option ng-repeat="c in cities">{{c}}</option>
+			</select>
+		</div>
+		<div ng-controller="postCtrl">
+			<div ng-repeat="p in posts">
+				<h4>{{p.title}}</h4>
+				<p>{{p.body}}</p>
+			</div>
+		</div>
+		<p >{{5+5}}</p>
+		<p>{{4+5}}</p>
+		
+		<input type="text" ng-model="name">
+		<p>My name is {{name}}</p>
+	</body>
+</html>
