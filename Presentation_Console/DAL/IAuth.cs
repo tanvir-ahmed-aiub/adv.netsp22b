@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public interface IAuth
+    public interface IAuth<X>
     {
-        bool Authenticate(string username, string password);
+        X Authenticate(string username, string password);
     }
 }

@@ -14,14 +14,17 @@ namespace DAL
         static UMS_Sp22_BEntities db = new UMS_Sp22_BEntities();
         public static IRepository<Student,int> StudentDataAccess()
         {
-            return new StudentRepoV2();
+            return new StudentRepo(db);
         }
         public static IRepository<Department, int> DepartmentDataAccess() 
         {
             return new DepartmentRepo(db);
         }
-        public static IAuth AuthDataAccess() {
-            return new StudentRepoV2();
+        public static IAuth<Token> AuthDataAccess() {
+            return new AuthRepo(db);
+        }
+        public static IRepository<Token,string> TokenDataAccess() {
+            return new AuthRepo(db);
         }
     }
 }

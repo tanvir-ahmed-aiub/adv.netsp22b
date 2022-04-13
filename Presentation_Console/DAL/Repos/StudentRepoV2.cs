@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    public class StudentRepoV2 : IRepository<Student, int>,IAuth
+    public class StudentRepoV2 : IRepository<Student, int>,IAuth<bool>
     {
         public bool Add(Student obj)
         {
